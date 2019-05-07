@@ -12,10 +12,10 @@ class BookShelf{
     +iterator()
 }
 class BookShelfIterator{
-index
-bookShelf
-hasNext()
-next()
+    -index
+    -bookShelf
+    +hasNext()
+    +next()
 }
 
 interface Iterator{
