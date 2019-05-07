@@ -1,0 +1,40 @@
+@startuml
+namespace クラスによるAdapterパターン{
+    interface Target{
+        {abstract}targetMethod1()
+        {abstract}targetMethod2()
+    }
+    class Adapter{
+        +targetMethod1()
+        +targetMethod1()
+    }
+    class Adaptes{
+        +methodA()
+        +methodB()
+        +methodC()
+    }
+    Client --> Target:Uses
+    Target <|.r. Adapter:implements
+    Adapter-r-|> Adaptes:extends
+}
+
+namespace インスタンスによるAdapterパターン{
+    interface Target{
+        {abstract}targetMethod1()
+        {abstract}targetMethod2()
+    }
+    class Adapter{
+        +targetMethod1()
+        +targetMethod1()
+    }
+    class Adaptee{
+        +methodA()
+        +methodB()
+        +methodC()
+    }
+    Client --> Target:Uses
+    Target <|.r. Adapter:extends
+    Adapter o-r-> Adaptee:has
+}
+
+@enduml
