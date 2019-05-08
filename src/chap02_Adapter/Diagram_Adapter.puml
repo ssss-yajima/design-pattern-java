@@ -19,11 +19,12 @@ namespace クラスによるAdapterパターン{
 }
 
 namespace インスタンスによるAdapterパターン{
-    interface Target{
+    class Target{
         {abstract}targetMethod1()
         {abstract}targetMethod2()
     }
     class Adapter{
+        -adaptee
         +targetMethod1()
         +targetMethod1()
     }

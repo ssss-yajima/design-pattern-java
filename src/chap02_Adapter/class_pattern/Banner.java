@@ -1,4 +1,4 @@
-package chap02_Adapter;
+package chap02_Adapter.class_pattern;
 
 public class Banner {
     private String string;
