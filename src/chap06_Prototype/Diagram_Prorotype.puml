@@ -1,0 +1,13 @@
+@startuml
+
+class Client
+interface Protytype{
+    {abstract}createClone()
+}
+class ConcreteProtytype{
+    +createClone()
+}
+
+Client -r->Protytype: Use
+Protytype <|-d- ConcreteProtytype
+@enduml
