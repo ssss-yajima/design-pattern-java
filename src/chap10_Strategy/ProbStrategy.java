@@ -1,4 +1,4 @@
-package Strategy;
+package chap10_Strategy;
 
 import java.util.Random;
 

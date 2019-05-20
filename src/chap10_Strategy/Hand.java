@@ -1,4 +1,4 @@
-package Strategy;
+package chap10_Strategy;
 
 public class Hand {
     public static final int HANDVALUE_GUU = 1;

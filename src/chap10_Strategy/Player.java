@@ -1,4 +1,4 @@
-package Strategy;
+package chap10_Strategy;
 
 public class Player {
     private String name;
