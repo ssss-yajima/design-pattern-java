@@ -1,0 +1,27 @@
+@startuml
+class Client{
+}
+interface Component{
+    +{abstract}method1()
+    +{abstract}method2()
+    +add()
+    +remove()
+    +getChild()
+}
+class Leaf{
+    +method1()
+    +method2()
+}
+class Composite{
+    children
+    +method1()
+    +method2()
+    +add()
+    +remove()
+    +getChild()
+}
+Client -r-> Component:Uses
+Leaf -u-|> Component
+Composite -u-|> Component
+Composite o-u-|> Component
+@enduml
