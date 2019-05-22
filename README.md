@@ -47,4 +47,9 @@ ConcreteFactoryの追加は簡単。何を実装すればいいか明らか。
 中心となる機能に対して機能を付け加えてDecorateする。  
 Decorateされる中身を変更することなく、機能（Decorate)を追加できるが、クラスが増える傾向。
 
-## 13.
+## 13.Visitor
+構造と処理を分離する。Directory内容を再帰的に訪問しながら処理する等。  
+処理種類の追加が容易。構造の追加は困難。構造クラスだけvisitを追加する必要がある。
+
+## 14.Chain of Responsibility
+

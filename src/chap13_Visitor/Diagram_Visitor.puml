@@ -1,0 +1,29 @@
+@startuml
+
+abstract Visitor{
+    {abstract}visit(ConcreteAcceptorA)
+    {abstract}visit(ConcreteAcceptorB)
+}
+class ConcreteVisitor{
+    +visit(ConcreteAcceptorA)
+    +visit(ConcreteAcceptorB)
+}
+
+ConcreteVisitor -u-|> Visitor
+
+abstract Acceptor{
+    {abstract}accept()
+}
+class ConcreteAcceptorA{
+    accept()
+}
+class ConcreteAcceptorB{
+    accept()
+}
+class ObjectStructure{
+}
+
+ObjectStructure o-l-> Acceptor
+ConcreteAcceptorA -u-|> Acceptor
+ConcreteAcceptorB -u-|> Acceptor
+@enduml
