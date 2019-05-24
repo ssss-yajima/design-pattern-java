@@ -1,0 +1,3 @@
+hoge@hoge.com
+fuga@fuga.co.jp
+fizz@fizz.ne.jp
